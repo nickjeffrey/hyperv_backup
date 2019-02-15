@@ -4,9 +4,9 @@ Powershell script to create cold backups of Hyper-V virtual machines
 # Usage
 
 For a one-time backup:
-`
+```
 powershell.exe x:\path\to\hyperv_backup.ps1 
-`
+```
 
 For recurring weekly backups:
 ```   
@@ -15,6 +15,7 @@ schtasks.exe /create /RU SYSTEM /TN hyperv_backup /TR "powershell.exe x:\path\to
 
 
 To exclude a particular VM from backups, please refer to section of the script that defines VMs to skip
+
 
 To send an email report showing the backup status, please edit the following section:
 ```
